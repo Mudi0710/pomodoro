@@ -1,7 +1,8 @@
 <template lang="pug">
 v-app
-  v-app-bar(color="primary")
-    v-app-bar-title 番茄鐘
+  v-app-bar(color="#F08080")
+    a(href="#" style="text-decoration:none")
+      v-app-bar-title 番茄鐘
     v-spacer
     v-btn(icon to='/')
       v-icon mdi-timer
@@ -9,9 +10,9 @@ v-app
       v-icon mdi-format-list-bulleted
     v-btn(icon to='/settings')
       v-icon mdi-cog
-    v-btn(icon v-if="notify" @click="toggleNotify")
+    v-btn(icon v-if="notify" @click="toggleNotify" color="white")
       v-icon mdi-bell
-    v-btn(icon v-else @click="toggleNotify")
+    v-btn(icon v-else @click="toggleNotify" color="white")
       v-icon mdi-bell-off
   v-main
     v-container

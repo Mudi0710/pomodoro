@@ -8,7 +8,7 @@ v-row.text-center#home
       v-icon mdi-play
     v-btn.mx-3(icon color="blue" v-else @click="pauseTimer")
       v-icon mdi-pause
-    v-btn.mx-3(icon color="red" v-if="current.length > 0" @click="finishTimer(true)")
+    v-btn.mx-3(icon color="#F08080" v-if="current.length > 0" @click="finishTimer(true)")
       v-icon mdi-skip-next
 </template>
 
